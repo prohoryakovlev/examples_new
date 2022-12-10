@@ -1,5 +1,5 @@
 import {StudentType} from "../02/02";
-import {GovernmentBuildingType, HouseType} from "../02/02-02";
+import {CityType, GovernmentBuildingType, HouseType} from "../02/02-02";
 
 debugger
 export const sum = (a: number, b: number) => {
@@ -47,4 +47,7 @@ export function toFireStaff(building: GovernmentBuildingType, staffCountFire: nu
 
 export const toHireStaff = (building: GovernmentBuildingType, staffCountHire: number) => {
     building.staffCount += staffCountHire
+}
+export function createMessage (city: CityType) {
+    return `Hello ${city.title} citizens. I want you be happy. All ${city.citizensNumber} men`
 }
