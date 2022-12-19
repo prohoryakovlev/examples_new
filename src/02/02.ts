@@ -15,7 +15,7 @@ type TechType = {
 }
 
 export type StudentType = {
-    id: number
+    id?: number
     name: string
     age: number
     isActive: boolean
