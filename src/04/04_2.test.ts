@@ -1,5 +1,5 @@
 import {CityType} from "../02/02-02";
-import {demolishHousesOnTheStreet} from "./04_2";
+import {demolishHousesOnTheStreet, getBuildingsWithStaffCountGreaterThen} from "./04_2";
 
 let city: CityType;
 
@@ -73,8 +73,10 @@ test('House should be destroyed', () => {
 })
 
 // 03. Массив строений, где работают больше 500 людей
-test.skip('buildings with correct staff count', () => {
-    let buildings = getBuildingsWithStaffCountGreaterThen(city.governmentBuildings, 500)
+test('buildings with correct staff count', () => {
+    let buildings = getBuildingsWithStaffCountGreaterThen(
+        city.governmentBuildings,
+        500)
 
     expect(buildings.length).toBe(1);
     expect(buildings[0].type).toBe('FIRE-STATION')
