@@ -6,7 +6,7 @@ export const predicate = (age: number) => {
 
 const oldAges = [100]
 
-type CourseType = {
+export type CourseType = {
     title: string
     price: number
 }
