@@ -18,11 +18,15 @@ const User = () => {
     const onNameChanged = () => {
         console.log("name changed")
     }
+    const focusLostHandler = () => {
+        console.log("focus lost")
+    }
 
     return (
-        <div> <textarea onChange={onNameChanged}>Dimych</textarea>
-            <div onClick={deleteUser} >Delete</div>
-            <div onClick={saveUser}>Save</div>
+        <div> <textarea onChange={onNameChanged} onBlur={focusLostHandler}>Dimych</textarea>
+            <input/>
+            <button onClick={deleteUser} >Delete</button>
+            <button onClick={saveUser}>Save</button>
         </div>
     )
 }
