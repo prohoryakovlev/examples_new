@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {SplitIntoWords, } from "./01/01";
+import User from "./05/06-callbacks";
 
 
 const sentense = "Hello my friends!"
@@ -21,7 +22,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <User />
   </React.StrictMode>
 );
 
