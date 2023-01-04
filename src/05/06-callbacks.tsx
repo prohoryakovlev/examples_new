@@ -15,10 +15,14 @@ const User = () => {
         alert("user have been saved")
     }
 
+    const onNameChanged = () => {
+        console.log("name changed")
+    }
+
     return (
-        <div>Dimych
-            <button onClick={deleteUser}>Delete</button>
-            <button onClick={saveUser}>Save</button>
+        <div> <textarea onChange={onNameChanged}>Dimych</textarea>
+            <div onClick={deleteUser} >Delete</div>
+            <div onClick={saveUser}>Save</div>
         </div>
     )
 }
