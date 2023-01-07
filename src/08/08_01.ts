@@ -19,8 +19,9 @@ export const users: UserType = {
 // users[1]
 
 var user = {id: 100500, name: 'Igor'}
-
 users[user.id] = user
+delete users[user.id]
+users[user.id].name = 'Vitya'
 
 export const userArray = [
     {id: 101, name: 'Dimych'},
